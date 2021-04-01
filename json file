@@ -1,0 +1,444 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "simple maths",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AdditionIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "plus",
+                            "type": "plus"
+                        }
+                    ],
+                    "samples": [
+                        "{x} {plus} {y}",
+                        "sum of {x} and {y}",
+                        "get the addition of {x} and {y}",
+                        "tell me addition of {x} and {y}"
+                    ]
+                },
+                {
+                    "name": "SubtractionIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "minus",
+                            "type": "sub"
+                        }
+                    ],
+                    "samples": [
+                        "{x} {minus} {y}",
+                        "get me subtraction of {x} and {y}",
+                        "subtraction of {x} and {y}",
+                        "tell me subtraction of {x} and {y}"
+                    ]
+                },
+                {
+                    "name": "MultiplicationIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{x} into {y}",
+                        "multiply {x} and {y}",
+                        "tell me of {x} into {y}"
+                    ]
+                },
+                {
+                    "name": "DivisionIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{x} by {y}",
+                        "divide {x} and {y}",
+                        "divide {x} with {y}",
+                        "get me the division of {x} and {y}",
+                        "tell me division of {x} and {y}"
+                    ]
+                },
+                {
+                    "name": "AreaAndPerimeterOfCircleIntent",
+                    "slots": [
+                        {
+                            "name": "r",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "area",
+                            "type": "area"
+                        },
+                        {
+                            "name": "circumference",
+                            "type": "circumference"
+                        }
+                    ],
+                    "samples": [
+                        "{circumference} of circle of radius {r}",
+                        "{area} of circle of radius {r}",
+                        "{area} and {circumference} of radius  {r} of a circle",
+                        "tell me the {area} and {circumference} of circle of radius {r}"
+                    ]
+                },
+                {
+                    "name": "AreaAndPerimeterOfRectangleIntent",
+                    "slots": [
+                        {
+                            "name": "l",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "b",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "perimeter",
+                            "type": "perimeter"
+                        },
+                        {
+                            "name": "area",
+                            "type": "area"
+                        }
+                    ],
+                    "samples": [
+                        "{perimeter} of rectangle of length {l} and {b}",
+                        "{area} of rectangle of length {l} and {b}",
+                        "{area} and {perimeter} of rectangle of length {l} and breadth {b}",
+                        "tell me {area} and {perimeter} of rectangle of length {l} and breadth {b}"
+                    ]
+                },
+                {
+                    "name": "AreaAndPerimeterOfSquareIntent",
+                    "slots": [
+                        {
+                            "name": "area",
+                            "type": "area"
+                        },
+                        {
+                            "name": "perimeter",
+                            "type": "perimeter"
+                        },
+                        {
+                            "name": "s",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{area} and {perimeter} of square of side {s}",
+                        "{perimeter} of square of side {s}",
+                        "{area} of square of side {s}",
+                        "get {area} {perimeter} of square of side {s}",
+                        "tell me {area} and {perimeter} of square of side {s} "
+                    ]
+                },
+                {
+                    "name": "AreaAndPerimeterOfEquilateralTriangleIntent",
+                    "slots": [
+                        {
+                            "name": "area",
+                            "type": "area"
+                        },
+                        {
+                            "name": "perimeter",
+                            "type": "perimeter"
+                        },
+                        {
+                            "name": "a",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{area} and {perimeter} of equilateral triangle of side {a}",
+                        "{perimeter} of equilateral triangle of side {a}",
+                        "{area} of equilateraltriangle of side {a}",
+                        "get the {area} and {perimeter} of equilateraltriangle of side {a}",
+                        "tell me the {area} and {perimeter} of equilateraltriangle of side {a}"
+                    ]
+                },
+                {
+                    "name": "AreaAndPerimeterOfRhombusIntent",
+                    "slots": [
+                        {
+                            "name": "area",
+                            "type": "area"
+                        },
+                        {
+                            "name": "perimeter",
+                            "type": "perimeter"
+                        },
+                        {
+                            "name": "h",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "b",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{area} and {perimeter} of rhombus of height {h} and base {b}",
+                        "{perimeter} of rhombus of height {h} and base {b}",
+                        "{area} of rhombus of height {h} and base {b}",
+                        "get me the {area} and {perimeter} of rhombus of height {h} and base {b}",
+                        "tell me the {area} and {perimeter} of rhombus of height {h} and base {b}"
+                    ]
+                },
+                {
+                    "name": "SurfaceAreaAndVolumeOfCubeIntent",
+                    "slots": [
+                        {
+                            "name": "surfacearea",
+                            "type": "surfacearea"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "vol"
+                        },
+                        {
+                            "name": "a",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{volume} of a cube of side {a}",
+                        "{surfacearea} of a cube of side {a}",
+                        "{surfacearea} and {volume} of a cube of side {a}",
+                        "get me the {surfacearea} and {volume} of cube of side {a}",
+                        "tell me the {surfacearea} and {volume} of cube of side {a}"
+                    ]
+                },
+                {
+                    "name": "SurfaceAreaAndVolumeOfSphereIntent",
+                    "slots": [
+                        {
+                            "name": "surfacearea",
+                            "type": "surfacearea"
+                        },
+                        {
+                            "name": "volume",
+                            "type": "vol"
+                        },
+                        {
+                            "name": "r",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        " {volume} of sphere of radius {r}",
+                        " {surfacearea}  of sphere of radius {r}",
+                        "get {volume} of sphere of radius {r}",
+                        "get {surfacearea}  of sphere of radius {r}",
+                        " {surfacearea} and {volume} of sphere of radius {r}",
+                        "tell me {surfacearea} and {volume} of sphere of radius {r}",
+                        "get {surfacearea} and {volume} of sphere of radius {r} "
+                    ]
+                },
+                {
+                    "name": "PrimeOrNotPrimeIntent",
+                    "slots": [
+                        {
+                            "name": "n",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "is {n} prime or not",
+                        "tell me whether {n} is prime or not",
+                        "check whether the number {n} is prime or not"
+                    ]
+                },
+                {
+                    "name": "EvenOrOddIntent",
+                    "slots": [
+                        {
+                            "name": "n",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "say whether {n} is even or odd",
+                        "tell me whether {n} is even or odd",
+                        "is {n} odd or even"
+                    ]
+                },
+                {
+                    "name": "LcmOfTwoNumbersIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "least common multiple of {x} and {y}",
+                        "tell me lowest common multiple of {x} and {y}",
+                        "tell me least common multiple of {x} and {y}",
+                        "tell me the lcm of {x} and {y}",
+                        "get me lcm of {x} and {y}",
+                        "lcm of {x} and {y}"
+                    ]
+                },
+                {
+                    "name": "HcfOfTwoNumbersIntent",
+                    "slots": [
+                        {
+                            "name": "x",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "y",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "tell me greatest common divisor of {x} and {y}",
+                        "tell me Highest Common Factor of {x} and {y}",
+                        "highest common factor of {x} and {y}",
+                        "greatest common divisor of {x} and {y}",
+                        "tell me gcd of {x} and {y}",
+                        "get me gcd of {x} and {y}",
+                        "get me hcf of {x} and {y}",
+                        "tell me hcf of {x} and {y}"
+                    ]
+                },
+                {
+                    "name": "MultiplicationTableIntent",
+                    "slots": [
+                        {
+                            "name": "n",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "get me {n} table",
+                        "get me multiplication table for {n}",
+                        "tell me multiplication table for {n}",
+                        "multiplication table for {n}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "sub",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "minus"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "plus",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "plus"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "circumference",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "circumference"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "area",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "area"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "perimeter",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "perimeter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "surfacearea",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "surfacearea"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "vol",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "volume"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
